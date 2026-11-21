@@ -1,0 +1,29 @@
+{
+  "name": "Questarr",
+  "slug": "questarr",
+  "categories": [24],
+  "date_created": "2026-11-21",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 5000,
+  "documentation": "https://github.com/Doezer/Questarr#readme",
+  "website": "https://github.com/Doezer/Questarr",
+  "repository": "https://github.com/Doezer/Questarr",
+  "architectures": ["amd64"],
+  "platforms": ["pve"],
+  "logo": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Questarr/icon.png",
+  "description": "Video game management app inspired by Sonarr and Radarr. Track your collection, discover releases through IGDB, RSS and xREL, search Torznab/Newznab indexers and send releases to your download client.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/questarr.sh",
+      "config_path": "/opt/questarr/.env",
+      "resources": { "cpu": 2, "ram": 2048, "hdd": 8, "os": "Debian", "version": "13" }
+    }
+  ],
+  "default_credentials": { "username": null, "password": null },
+  "notes": [
+    { "text": "The first account created in the web interface becomes the administrator.", "type": "info" }
+  ]
+}
